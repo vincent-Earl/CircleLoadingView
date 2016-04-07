@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="test" format="color"/><!-- 这里的是复用的属性  -->
+    <declare-styleable name="CircleProgressBarView">
+        <!-- 以下为CircleProgressBarView单独使用的属性  -->
+        <attr name="pointer_color" format="color"/>
+        <attr name="pointer_num" format="integer"/>
+    </declare-styleable>
+</resources>
