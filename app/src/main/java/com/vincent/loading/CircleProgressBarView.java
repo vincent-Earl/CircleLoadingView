@@ -81,7 +81,7 @@ public class CircleProgressBarView extends View {
     protected void onDraw(Canvas canvas) {
         this.canvas = canvas;
         canvas.save();
-        canvas.setDrawFilter(pdf);
+        canvas.setDrawFilter(pdf);//canvas的抗锯齿
         Path path = new Path();
         path.addCircle(getWidth() / 2, getHeight() / 2, getWidth() / 2, Path.Direction.CCW);//CCW 逆时针方向 CW 顺时针方向
         canvas.clipPath(path, Region.Op.REPLACE);
